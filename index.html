@@ -47,17 +47,17 @@
 
         #topfish {
             top: 10vh;
-            animation: swimA 10s linear infinite, swimVarA 10s 4s ease infinite;
+            animation: swimA 10s linear infinite, swimVarA 10s ease infinite;
         }
 
         #middlefish {
             top: 45vh;
-            animation: swimA 18s cubic-bezier(.94, -0.08, .22, 1.07) infinite;
+            animation: swimA 24s cubic-bezier(.94, -0.08, .22, 1.07) infinite;
         }
 
         #bottomfish {
             bottom: 20vh;
-            animation: swimA 16s ease-out infinite, swimVarB 12s 4s linear infinite;
+            animation: swimA 16s 5s ease-out infinite, swimVarB 16s 5s linear infinite;
         }
 
         #topfishB {
@@ -144,22 +144,22 @@
                 top: 80vh
             }
 
-            85% {
+            100% {
                 top: 60vh
             }
         }
 
         @keyframes swimVarB {
             0% {
-                bottom: 10vh
+                bottom: 20vh
             }
 
             50% {
-                bottom: 40vh
+                bottom: 75vh
             }
 
             100% {
-                bottom: 80vh
+                bottom: 100vh
             }
         }
 
